@@ -1,0 +1,111 @@
+/*======ABOUT=============*/
+.about{
+    color: white;
+    position: relative;
+    top: 50px;
+}
+
+.aboutDescription {
+    padding-left: 8%;
+    padding-right: 8%;
+    background-color: rgba(5, 5, 5, 0.56);
+    color:white;
+    text-align: justify;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 50px;
+}
+
+/*========EXPERIENCE============*/
+
+.experience {
+    position: relative;
+    top: 40px;
+    max-height: 60vh;
+    overflow: scroll;
+    padding-top: 10px;
+    background-position: center;
+    background-size: cover;
+    margin-top: 25px;
+}
+
+.work {
+    margin-bottom: 200px;
+    color: white;
+}
+
+#experienceScroll {
+    position: fixed;
+    bottom: 100px;
+    left: 70%;
+    color: white;
+    
+}
+
+/*============Education========*/
+.school{
+    background-color: white;
+    border: 2px solid black;
+    margin: 5px;
+    max-height: 250px;
+    position: relative;
+    top: 30px;
+}
+
+
+.skillsColumn {
+    margin: 2%;
+    background-color: white;
+    color: black;
+    text-align: center;
+    min-height: 100px;
+    min-width: 275px;
+}
+/* =================== 
+Adding Main main body selectors*/
+
+
+
+.skills {
+    background-color: white;
+    border-top: 25px solid #A85248;
+    padding-left: 10%;
+    padding-right: 6%;
+    min-height: 100vh;
+    border-bottom: 25px solid #A85248;
+
+}
+
+.otherTools{
+    text-align: center;
+    margin-right: 7%;
+}
+
+.backgroundImage {
+    position:absolute;
+    top: 25px;
+    background-image: url(images/enter-background.jpg);
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+    height: 110vh;
+}
+
+.imageBox {
+    max-width: 350px;
+}
+
+.experienceRow {
+    height: 25px;
+    text-align: center;
+    font-size: 2em;
+}
+.experienceList{
+    height: 80vh;
+    overflow: scroll;
+    opacity: .4;
+}
+
+#profilePic {
+    border: 8px solid black;
+}

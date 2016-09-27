@@ -1,0 +1,14 @@
+<div class="row">
+    <div class="col-xs-12">
+        <h1><code>< technicalSkills ></code></h1>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-5 skillsColumn shake-hard" ng-repeat="skill in skills">
+        <h3>{{skill.skill}}</h3>
+        <h4>Proficiency: {{skill.proficiency}}</h4>
+    </div>
+</div>
+<div class="row otherTools">
+    <div class="col-xs-3 toolsBox" ng-repeat="tool in otherTools"><h4>{{tool}}</h4></div>
+</div>
