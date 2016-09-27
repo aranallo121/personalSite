@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="MainApp">
+<head>
+    <meta charset="UTF-8" >
+    <title>Anthony W. Ranallo</title>
+<!---------Add Bootstrap, Angular, and CSS Links------->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js"></script>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" type="text/css" href="http://csshake.surge.sh/csshake.min.css">
+
+</head>
+<body ng-controller="MainController">
+    <div class="container-fluid" >
+        <div class="row green">
+            <div class="col-xs-12 backgroundImage">
+                <h1>Anthony Ranallo</h1>
+            </div>
+        </div>
+        <div class="row about">
+            <div class="col-xs-12">
+                <div class="titlebox">
+                    <h1>~About Me~</h1>
+                    <div class="imageBox center-block">
+                        <img id="profilePic" src="images/headshots-12.jpg" class="img img-responsive img-circle">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-xs-12">
+                <h4><b><a href="http://en.wikipedia.org/wiki/Multipotentiality">Multipotentialite</a></b>-noun: A person whose curiosity for the world around them leads to several different interests and a range of intellectual, business, physical, or creative persuits. Often a person who excels in several areas without  specializing in just one.</h4>
+                <h4>When I first heard the above term, I knew that I had found where I fit into the world. I am a person who is constantly trying to learn and improve. Sometimes this curiosity leads me to learn useful skills like Project Management and Software Development, sometimes it leads me toward learning Parkour, Jiu Jitsu, or custom motorcycles.</h4>
+                <h4>The constant, is that I have a love for Agile practices and developing creative and innovative solutions to roadblocks. I set lofty goals and tackle big projects; developing a deep passion for what I am doing and for the end result.</h4>
+            </div>
+        </div>
+        <div class="container skills">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h1><code>< technicalSkills ></code></h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-5 skillsColumn shake-hard" ng-repeat="skill in skills">
+                    <h3>{{skill.skill}}</h3>
+                    <h4>Proficiency: {{skill.proficiency}}</h4>
+                </div>
+            </div>
+            <div class="row otherTools">
+                <div class="col-xs-3 toolsBox" ng-repeat="tool in otherTools"><h4>{{tool}}</h4></div>
+            </div>
+        </div>
+    <div class="experience">
+        <div class="row green">
+            <div class="col-xs-12">
+                <h1>~Experience~</h1>
+            </div>
+        </div>
+        <div class="container experienceList">
+        <div class="row experienceRow">
+            <div class="col-xs-6 red">
+                <a ui-sref="experience" ui-sref-active="active">Work Experience</a>
+            </div>
+            <div class="col-xs-6 red">
+                <a ui-sref="education" ui-sref-active="active">Education</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sx-12">
+                <ui-view></ui-view>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h1>¡Recomendatións!</h1>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4">Rec1</div>
+                    <div class="col-sm-4">Rec2</div>
+                    <div class="col-sm-4">Rec3</div>
+                </div>
+            </div>
+        </div>
+        Container
+    </div>
+    </div>
+   
+   
+<!------------Add scripts-------------> 
+    <script src="node_modules/angular-snapscroll/src/snapscroll.js"></script>
+    <script src="node_modules/ng-parallax/src/ngParallax.min.js"></script>
+    <script src="//unpkg.com/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="app.js"></script>
+    <script src="services/skills-service.js"></script>  
+</body>
+</html>
